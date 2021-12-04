@@ -1,0 +1,96 @@
+/* Estilos generales */
+
+:root {
+  --main-color: #012bb3;
+  --secondary-color: #fa5050;
+  --placeholder-gray: #cccaca;
+  --subtitle-color: #405161;
+  --title-font: "Spartan", sans-serif;
+  --text-font: "Nunito", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Estilos especificos */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--placeholder-gray);
+}
+
+.logo-container {
+  /* stylelint-disable-next-line length-zero-no-unit */
+  margin: 8px 0px 4px 8px;
+}
+
+.logo {
+  max-width: 12%;
+}
+
+.link-container {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-link {
+  font-family: var(--text-font);
+  font-size: 1.125rem;
+  color: var(--secondary-color);
+  transition: all 200ms;
+  align-self: center;
+}
+
+.contact-link:hover {
+  border-bottom: 2px solid var(--subtitle-color);
+}
+
+.shop-btn {
+  font-size: 1.125rem;
+  font-family: var(--text-font);
+  border: 2px solid var(--subtitle-color);
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 32px;
+  transition: all 200ms;
+}
+
+.shop-btn:hover {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.shop-link:hover {
+  display: inline-block;
+  color: #fff;
+}
+
+.hero-container {
+  background-image: url("../img/landing-hero.png");
+  background-repeat: no-repeat;
+  height: 700px;
+  display: flex;
+}
+
+.hero-title {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  margin: 0;
+}
+
+.hero-section {
+  background-color: #eee;
+}
+
+.hero-form {
+  width: 50%;
+}
