@@ -1,4 +1,5 @@
 /* Estilos generales */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Spartan:wght@600;700&display=swap");
 
 :root {
   --main-color: #012bb3;
@@ -22,7 +23,7 @@ a {
 
 .header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid var(--placeholder-gray);
 }
@@ -56,7 +57,7 @@ a {
 
 .shop-btn {
   font-size: 1.125rem;
-  font-family: var(--text-font);
+  font-family: Arial, Helvetica, sans-serif;
   border: 2px solid var(--subtitle-color);
   background-color: #fff;
   padding: 8px 16px;
@@ -69,13 +70,15 @@ a {
   border: 2px solid var(--secondary-color);
 }
 
+.shop-link {
+  color: var(--subtitle-color);
+}
+
 .shop-link:hover {
-  display: inline-block;
   color: #fff;
 }
 
 .hero-container {
-  background-image: url("../img/landing-hero.png");
   background-repeat: no-repeat;
   height: 700px;
   display: flex;
@@ -83,14 +86,163 @@ a {
 
 .hero-title {
   font-family: var(--title-font);
-  font-size: 2rem;
-  margin: 0;
+  font-size: 1.75rem;
+  margin-top: 2rem;
+}
+
+.flex {
+  display: flex;
 }
 
 .hero-section {
   background-color: #eee;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  height: 75vh;
+}
+
+.hero-text {
+  background-image: url("assets/img-form.png");
+  background-repeat: no-repeat;
+  width: 55%;
+}
+
+.white-space {
+  width: 50%;
+}
+
+.hero-subtitle {
+  width: 50%;
+  justify-self: center;
+  margin-top: 5rem;
+  font-family: var(--text-font);
+  font-size: 1.25rem;
 }
 
 .hero-form {
   width: 50%;
+}
+
+.form-container {
+  align-self: center;
+  border: 2px solid white;
+  box-shadow: 2px 2px 20px rgb(199, 199, 199);
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: var(--text-font);
+  background-color: #fff;
+}
+
+.name-field,
+.user-field,
+.email-field,
+.message-field,
+.terms-field {
+  margin-bottom: 1rem;
+}
+
+.input {
+  border-radius: 5px;
+  border: 1px solid gray;
+  line-height: 1.5rem;
+  padding-left: 4px;
+  width: 100%;
+}
+
+.info-contenedor {
+  background-color: var(--secondary-color);
+  height: 30vh;
+}
+
+.card-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card-value {
+  margin: 1.5rem;
+  background-color: aliceblue;
+  border-radius: 8px;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.card-title {
+  font-family: var(--title-font);
+  font-weight: bold;
+}
+
+.card-text {
+  font-family: var(--text-font);
+}
+
+.product-section {
+  background-color: #ffffff;
+  opacity: 0.8;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #ffffff 20%,
+      #ffffff 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #ffffff 20%,
+        #ffffff 80%,
+        transparent 80%,
+        transparent
+      )
+      25px 25px,
+    linear-gradient(#cccaca 2px, transparent 2px) 0 -1px,
+    linear-gradient(90deg, #cccaca 2px, #ffffff 2px) -1px 0;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
+
+.product-container {
+  padding: 2rem 0;
+}
+
+.product-img {
+  width: 40%;
+  border-radius: 8px;
+  margin: 8px;
+}
+
+.card-product {
+  width: 45%;
+  /* border: 2px solid gold; */
+  border-radius: 8px;
+  background-color: rgb(243, 243, 243);
+}
+
+.card-product + .card-product {
+  margin-left: 2rem;
+}
+
+.product-row {
+  justify-content: center;
+  align-items: center;
+}
+
+.product-row + .product-row {
+  margin-top: 2rem;
+}
+
+.product-description {
+  padding: 0 1rem;
+}
+
+.product-title {
+  font-family: var(--title-font);
+}
+
+.product-description {
+  font-family: var(--text-font);
+}
+
+.product-btn {
 }
