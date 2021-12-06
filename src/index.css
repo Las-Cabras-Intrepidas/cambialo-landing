@@ -246,3 +246,49 @@ a {
 
 .product-btn {
 }
+
+/* seccion donde encontrarnos */
+
+.social-container {
+  background-color: rgb(243, 243, 243);
+  clip-path: polygon(0 0, 100% 0%, 100% 83%, 50% 100%, 0 86%);
+}
+
+.contenedor-contact {
+  padding-bottom: 4rem;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.info-contact > h3 {
+  font-family: var(--title-font);
+  font-size: 1.75rem;
+}
+
+.map-contact {
+  width: 70%;
+  border: 1px solid var(--placeholder-gray);
+  border-radius: 8px;
+  box-shadow: 2px 2px 20px rgb(199, 199, 199);
+}
+
+.list-contact {
+  list-style: none;
+  line-height: 4rem;
+  font-family: var(--text-font);
+  font-size: 1.25rem;
+}
+
+.contact-icon {
+  color: #fa5050;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.rrss {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 50px;
+  display: flex;
+  justify-content: space-around;
+}
