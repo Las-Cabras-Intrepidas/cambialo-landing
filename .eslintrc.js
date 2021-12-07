@@ -1,19 +1,17 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
-  extends: [
-    "standard"
-  ],
+  extends: ["standard"],
   parserOptions: {
     ecmaVersion: 12,
-    sourceType: "module"
+    sourceType: "module",
   },
   rules: {
     quotes: ["error", "double"],
     semi: ["error", "always"],
     "comma-dangle": ["error", "only-multiline"],
-    "space-before-function-paren": ["error", "never"]
-  }
+    "space-before-function-paren": ["error", "never"],
+  },
 };

@@ -1,213 +1,261 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cambialo</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script type="module" src="./index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cambialo</title>
-  <link rel="stylesheet" href="./index.css" />
-  <script type="module" src="./index.js"></script>
-</head>
+  <body>
+    <!-- Cabecera -->
 
-<body>
-  <!-- Cabecera -->
-  <header class="header-container">
-    <div class="logo-container">
-      <img class="logo" src="assets/logotipo-500.png" alt="Logotipo" />
-    </div>
-    <div class="link-container">
-      <a class="contact-link" href="#">Contacto</a>
-      <button class="shop-btn">
-        <a class="shop-link" href="#">Tienda</a>
-      </button>
-    </div>
-  </header>
-  <!-- Fin Cabecera -->
-
-  <!-- Hero section -->
-  <section class="hero-section">
-    <div class="form-container">
-      <form>
-        <div class="name-field">
-          <label class="label">Nombre</label>
-          <div class="control">
-            <input class="input" type="text" placeholder="Tu nombre" />
-          </div>
-        </div>
-
-        <div class="user-field">
-          <label class="label">Username</label>
-          <div class="control">
-            <input class="input" type="text" placeholder="Crea tu ususario" />
-          </div>
-        </div>
-
-        <div class="email-field">
-          <label class="label">Email</label>
-          <div class="control">
-            <input class="input" type="email" placeholder="Tu email" />
-          </div>
-        </div>
-
-        <div class="message-field">
-          <label class="label">Mensaje</label>
-          <div class="control">
-            <textarea class="input textarea" placeholder="Tu mensaje..."></textarea>
-          </div>
-        </div>
-
-        <div class="terms-field">
-          <div class="control">
-            <label class="">
-              <input type="checkbox" required />
-              Estoy de acuerdo con los
-              <a href="#">terminos y condiciones.</a>
-            </label>
-          </div>
-        </div>
-
-        <div class="field">
-          <div class="control">
-            <button class="button" onclick="location.reload()">
-              Enviar
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="hero-text">
-      <h1 class="hero-title">
-        ¿Conoces la nueva manera de comprar sin dinero?
-      </h1>
-      <div class="flex">
-        <div class="white-space"></div>
-        <h2 class="hero-subtitle">
-          Con cambialo, nace la nueva plataforma de intercambio que busca dar
-          una nueva vida a lo que no usas.
-        </h2>
+    <header class="header-container">
+      <div>
+        <img class="logo" src="assets/logotipo-500.png" alt="Logotipo" />
       </div>
-    </div>
-    </div>
-  </section>
+      <nav class="flex" id="navbar">
+        <a class="contact-link" href="#">Contacto</a>
+        <button class="btn"><a href="#">Tienda</a></button>
+      </nav>
+    </header>
 
-  <!-- Fin Hero section -->
+    <section class="hero-section">
 
-  <!--Información relevante-->
-  <section class="info-contenedor">
-    <div class="card-container flex">
-      <div class="card-value">
-        <h4 class="card-title">Somos expertos en seguridad</h4>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui
-          nunc. Sed ornare viverra egestas. Integer a ante sit amet dui egestas
-          fringilla.
-        </p>
-      </div>
-
-      <div class="card-value">
-        <h4 class="card-title">Actualización semanal</h4>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui
-          nunc. Sed ornare viverra egestas. Integer a ante sit amet dui egestas
-          fringilla.
-        </p>
-      </div>
-
-      <div class="card-value">
-        <h4 class="card-title">Servicio de Incidencias</h4>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui
-          nunc. Sed ornare viverra egestas. Integer a ante sit amet dui egestas
-          fringilla.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Fin Información relevante-->
-
-  <!-- Productos destacados -->
-
-  <section class="product-section">
-
-    <div class="product-container">
-      <div class="product-row flex">
-        <div class="card-product flex">
-          <img class="product-img" src="assets/zapatos-500.jpg" alt="zapatos de tacón amarillos">
-          <div class="product-description">
-            <h3 class="product-title">Zapatos de tacón</h3>
-            <p class="product-text">Estos son unos zaptos amarillos que no pasan desapercibidos, como nuevos.</p>
-            <button class="shop-btn"><a href="">Cambialo!</a></button>
-          </div>
-        </div>
-        <div class="card-product flex">
-          <img class="product-img" src="assets/iphone-500.jpg" alt="iPhone 11 púrpura">
-          <div class="product-description">
-            <h3 class="product-title">iPhone 11 púrpura</h3>
-            <p class="product-text">iPhone directamente traido de china, de antes de la pandemia, como nuevo a estrenar.
-              AAA.</p>
-            <button class="shop-btn"><a href="">Cambialo!</a></button>
-          </div>
+      <div class="hero-text">
+        <h1 class="hero-title">
+          ¿Conoces la nueva manera de comprar sin dinero?
+        </h1>
+        <div class="flex">
+          <div class="white-space"></div>
+          <h2 class="hero-subtitle">
+            Con cambialo, nace la nueva plataforma de intercambio que busca dar
+            una nueva vida a lo que no usas.
+          </h2>
         </div>
       </div>
-        <div class="product-row flex">
+        <form id="form" class="form-container">
+          <div class="name-field">
+            <label class="label">Nombre</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Tu nombre" />
+            </div>
+          </div>
+
+          <div class="user-field">
+            <label class="label">Username</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Crea tu ususario" />
+            </div>
+          </div>
+
+          <div class="email-field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" placeholder="Tu email" />
+            </div>
+          </div>
+
+          <div class="message-field">
+            <label class="label">Mensaje</label>
+            <div class="control">
+              <textarea
+                class="input textarea"
+                placeholder="Tu mensaje..."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="terms-field">
+            <div class="control">
+              <label class="">
+                <input type="checkbox" required />
+                Estoy de acuerdo con los
+                <a class="conditions-link" href="#">términos y condiciones.</a>
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <button class="btn" onclick="location.reload()"><a href="#">Enviar</a></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+    <section class="info-contenedor">
+      <div class="card-container">
+        <div class="card-value">
+          <h4 class="card-title">Expertos en seguridad</h4>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui
+            nunc. Sed ornare viverra egestas. Integer a ante sit amet dui
+            egestas fringilla.
+          </p>
+        </div>
+
+        <div class="card-value">
+          <h4 class="card-title">Actualización semanal</h4>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui
+            nunc. Sed ornare viverra egestas. Integer a ante sit amet dui
+            egestas fringilla.
+          </p>
+        </div>
+
+        <div class="card-value">
+          <h4 class="card-title">Servicio de Incidencias</h4>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui
+            nunc. Sed ornare viverra egestas. Integer a ante sit amet dui
+            egestas fringilla.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="product" class="product-section">
+      <div class="product-container">
           <div class="card-product flex">
-            <img class="product-img" src="assets/lavadora1x1.jpg" alt="lavadora">
+              <img
+                class="product-img"
+                src="assets/zapatos-500.jpg"
+                alt="zapatos de tacón amarillos"
+              />
+              <div class="product-description">
+                <h3 class="product-title">Zapatos de tacón</h3>
+                <p class="product-text">
+                  Estos son unos zaptos amarillos que no pasan desapercibidos,
+                  como nuevos.
+                </p>
+                <button class="btn"><a href="">Cambialo!</a></button>
+              </div>
+          </div>
+          <div class="card-product flex">
+            <img
+              class="product-img"
+              src="assets/iphone-500.jpg"
+              alt="iPhone 11 púrpura"
+            />
+            <div class="product-description">
+              <h3 class="product-title">iPhone 11 púrpura</h3>
+              <p class="product-text">
+                iPhone directamente traido de china, de antes de la pandemia,
+                como nuevo a estrenar. AAA.
+              </p>
+              <button class="btn"><a href="">Cambialo!</a></button>
+            </div>
+          </div>
+          <div class="card-product flex">
+            <img
+              class="product-img"
+              src="assets/lavadora1x1.jpg"
+              alt="lavadora"
+            />
             <div class="product-description">
               <h3 class="product-title">Lavadora LG</h3>
-              <p class="product-text">Lavadora blanca casi sin uso, garantía vigente. Acepto xbox y playstation.</p>
-              <button class="shop-btn"><a href="">Cambialo!</a></button>
+              <p class="product-text">
+                Lavadora blanca casi sin uso, garantía vigente. Acepto xbox y
+                playstation.
+              </p>
+              <button class="btn"><a href="">Cambialo!</a></button>
             </div>
           </div>
           <div class="card-product flex">
-            <img class="product-img" src="assets/bici1x1.jpg" alt="bicicleta blanca">
+            <img
+              class="product-img"
+              src="assets/bici1x1.jpg"
+              alt="bicicleta blanca"
+            />
             <div class="product-description">
               <h3 class="product-title">Bicicleta con cesta</h3>
-              <p class="product-text">Bicicleta con cesta incluida, no tiene ruedas de apoyo, cubierta recién
-                cambiada.</p>
-                <button class="shop-btn"><a href="">Cambialo!</a></button>
+              <p class="product-text">
+                Bicicleta con cesta incluida, no tiene ruedas de apoyo, cubierta
+                recién cambiada.
+              </p>
+              <button class="btn"><a href="">Cambialo!</a></button>
             </div>
           </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Fin Productos destacados -->
-  
- <!-- donde encontrarnos -->
-  <section class="social-container">
-    <div class="contenedor-rrss">
-      <div class="rrss">
-        <a href="#"><i class="rrss-icon fab fa-twitter"></i></a>
-        <a href="#"><i class="rrss-icon fab fa-facebook-f"></i></a>
-        <a href="#"><i class="rrss-icon fab fa-instagram"></i></a>
-      </div>
-    </div>
-
-
-    <div class="contenedor-contact flex">
-      <div class="info-contact">
-        <h3 class="title-contact">¿Dónde encontrarnos?</h3>
-        <ul class="list-contact">
-          <li><i class="contact-icon fas fa-phone"></i> 902-781-369</li>
-          <li><i class="contact-icon fas fa-envelope"></i> intrepidibex@gmail.com</li>
-          <li><i class="contact-icon fas fa-arrow-right"></i> Calle La X, 13. Madrid, España.</li>
-        </ul>
-      </div>
-
-      <div class="contenedor-map">
-        <div class="img-contact">
-          <img class="map-contact"
-            src="https://map.viamichelin.com/map/carte?map=viamichelin&z=10&lat=40.42483&lon=-3.68506&width=550&height=382&format=png&version=latest&layer=background&debug_pattern=.*"
-            alt="mapa de madrid">
+    <section class="social-container">
+      <div class="rrss-container">
+        <h3 class="title-contact">¿Donde estamos?</h3>
+        <div class="icon-container">
+          <a href="#"><i class="rrss-icon fab fa-twitter-square"></i></a>
+          <a href="#"><i class="rrss-icon fab fa-facebook-square"></i></a>
+          <a href="#"><i class="rrss-icon fab fa-instagram"></i></a>
         </div>
       </div>
-    </div>
-  </section>
+      <hr>
+      <div class="contact-container">
+        <div class="info-contact">
+          <h3 class="title-contact">¡Contáctanos!</h3>
+          <ul class="list-contact">
+            <li><i class="contact-icon fas fa-phone"></i> 902-781-369</li>
+            <li>
+              <i class="contact-icon fas fa-envelope"></i>
+              intrepidibex@gmail.com
+            </li>
+            <li>
+              <i class="contact-icon fas fa-arrow-right"></i> Calle La X, 13.
+              Madrid, España.
+            </li>
+          </ul>
+        </div>
 
+        <div class="map-container">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224494.30680203543!2d-16.42607446700346!3d28.457749010572844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceccc254171%3A0x43111473d277e52e!2sSanta%20Cruz%20de%20Tenerife!5e0!3m2!1ses!2ses!4v1638901557498!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
 
-  <!--footer-->
-</body>
+    <footer class="footer-container">
 
+      <div class="link-container">
+        <div class="desktop-bg">
+          <ul class="footer-list">
+            <li class="footer-link">
+              <a href="#navbar">INICIO</a>
+            </li>
+            <li class="footer-link">
+              <a href="#product">PRODUCTOS</a>
+            </li>
+            <li class="footer-link">
+              <a href="#form">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+        <div class="desktop-bg">
+          <ul class="footer-list">
+            <li class="footer-link">
+              <a href="#">SOPORTE</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">AVISO LEGAL</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">CONOCENOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-flex">
+        <a href="#">
+          <img class="logo" src="assets/logotipo-500.png" alt="">
+        </a>
+        <h4 class="footer-title">Cambialo!</h4>
+        <p class="footer-rights">Copyright © 2021, Cámbialo ©</p>
+      </div>
+    </footer>
+  </body>
 </html>

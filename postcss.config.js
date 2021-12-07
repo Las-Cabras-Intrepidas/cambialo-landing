@@ -1,3 +1,5 @@
+/* eslint-disable quote-props */
+/* eslint-disable indent */
 module.exports = {
   plugins: {
     "postcss-nesting": true,
@@ -7,7 +9,7 @@ module.exports = {
     },
     "postcss-preset-env": {
       stage: 3,
-      features: {
+      feature2: {
         "nesting-rules": true,
         "custom-properties": true,
       },
