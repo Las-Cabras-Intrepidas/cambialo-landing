@@ -184,6 +184,8 @@ textarea {
 }
 
 .product-container {
+
+  display: flex;
   width: 95%;
   padding: 1rem;
   box-sizing: border-box;

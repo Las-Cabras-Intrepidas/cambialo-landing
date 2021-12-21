@@ -1,269 +1,250 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cambialo</title>
+    <title>Cámbialo</title>
     <link rel="stylesheet" href="index.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <script type="module" src="./index.js"></script>
-  </head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./assets/logotipo-icon.ico">
 
-  <body>
+    <script type=" module " src="./index.js "></script>
+</head>
+
+<body>
     <!-- Cabecera -->
 
-    <header class="header-container">
-      <div>
-        <img class="logo" src="assets/logotipo-500.png" alt="Logotipo" />
-      </div>
-      <nav class="flex" id="navbar">
-        <a class="contact-link" href="#">Contacto</a>
-        <button class="btn"><a href="#">Tienda</a></button>
-      </nav>
+    <header class="header-container ">
+        <div>
+            <img class="logo " src="assets/logotipo-500.png " alt="Logotipo " />
+        </div>
+        <nav class="flex " id="navbar ">
+            <a class="contact-link " href="# ">Contacto</a>
+            <button class="btn "><a href="https://las-cabras-intrepidas.github.io/Despliegue_Web/index.html">Tienda</a></button>
+        </nav>
     </header>
 
-    <section class="hero-section">
-      <div class="hero-text">
-        <h1 class="hero-title">
-          ¿Conoces la nueva manera de comprar sin dinero?
-        </h1>
-        <div class="flex">
-          <div class="white-space"></div>
-          <h2 class="hero-subtitle">
-            Con cambialo, nace la nueva plataforma de intercambio que busca dar
-            una nueva vida a lo que no usas.
-          </h2>
+    <section class="hero-section ">
+        <div class="hero-text ">
+            <h1 class="hero-title ">
+                ¿Conoces la nueva manera de comprar sin dinero?
+            </h1>
+            <div class="flex ">
+                <div class="white-space "></div>
+                <h2 class="hero-subtitle ">
+                    Con cambialo, nace la nueva plataforma de intercambio que busca dar una nueva vida a lo que no usas.
+                </h2>
+            </div>
         </div>
-      </div>
-      <form id="form" class="form-container">
-        <div class="name-field">
-          <label class="label">Nombre</label>
-          <div class="control">
-            <input class="input" type="text" placeholder="Tu nombre" />
-          </div>
-        </div>
+        <form id="form " class="form-container ">
 
-        <div class="user-field">
-          <label class="label">Username</label>
-          <div class="control">
-            <input class="input" type="text" placeholder="Crea tu ususario" />
-          </div>
-        </div>
+            <h4>
+                ¿Tienes alguna pregunta? Contacta con nosotros.
+            </h4>
 
-        <div class="email-field">
-          <label class="label">Email</label>
-          <div class="control">
-            <input class="input" type="email" placeholder="Tu email" />
-          </div>
-        </div>
+            <div class="name-field ">
+                <label class="label ">Nombre*</label>
+                <div class="control ">
+                    <input class="input " type="text " placeholder=" Nombre y apellidos " />
+                </div>
+            </div>
 
-        <div class="message-field">
-          <label class="label">Mensaje</label>
-          <div class="control">
-            <textarea
-              class="input textarea"
-              placeholder="Tu mensaje..."
-            ></textarea>
-          </div>
-        </div>
+            <div class="email-field ">
+                <label class="label ">Correo electrónico*</label>
+                <div class="control ">
+                    <input class="input " type="email " placeholder=" email@example " />
+                </div>
+            </div>
 
-        <div class="terms-field">
-          <div class="control">
-            <label class="">
-              <input type="checkbox" required />
-              Estoy de acuerdo con los
-              <a class="conditions-link" href="#">términos y condiciones.</a>
-            </label>
-          </div>
-        </div>
+            <div class="email-field ">
+                <label class="label ">Teléfono</label>
+                <div class="control ">
+                    <input class="input " type="tel " placeholder=" Número de teléfono " />
+                </div>
+            </div>
 
-        <div class="field">
-          <div class="control">
-            <button class="btn" onclick="location.reload()">
-              <a href="#">Enviar</a>
-            </button>
-          </div>
-        </div>
-      </form>
+            <div class="message-field ">
+                <label class="label ">Mensaje*</label>
+                <div class="control ">
+                    <textarea class="input textarea " placeholder="Tu mensaje... "></textarea>
+                </div>
+            </div>
+
+            <div class="requiredCamps-field ">
+                <div class="control ">
+                    <label class=" ">
+                      (*) Campos obligatorios.
+                    </label>
+                </div>
+            </div>
+
+            <div class="terms-field ">
+                <div class="control ">
+                    <label class=" ">
+                      <input id="checkTerms" type="checkbox" required> Estoy de acuerdo con los <a class="conditions-link " href="./terms-conditions.html" target="_blank">términos y condiciones</a>.
+                    </label>
+                </div>
+            </div>
+
+            <div class="field ">
+                <div class="control ">
+                    <button class="btn " onclick="location.reload() ">
+                      <a href="# ">Enviar</a>
+                    </button>
+                </div>
+            </div>
+        </form>
     </section>
 
-    <section class="info-contenedor">
-      <div class="card-container">
-        <div class="card-value">
-          <h4 class="card-title">Expertos en seguridad</h4>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui
-            nunc. Sed ornare viverra egestas. Integer a ante sit amet dui
-            egestas fringilla.
-          </p>
-        </div>
+    <section class="info-contenedor ">
 
-        <div class="card-value">
-          <h4 class="card-title">Actualización semanal</h4>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui
-            nunc. Sed ornare viverra egestas. Integer a ante sit amet dui
-            egestas fringilla.
-          </p>
-        </div>
+        <div class="card-container ">
 
-        <div class="card-value">
-          <h4 class="card-title">Servicio de Incidencias</h4>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui
-            nunc. Sed ornare viverra egestas. Integer a ante sit amet dui
-            egestas fringilla.
-          </p>
+            <div class="card-value ">
+                <h4 class="card-title ">Atencion al cliente</h4>
+                <p class="card-text ">
+                    Contacta con nosotros para resolver cualquier tipo de incidencia o duda. Estamos a tu disposición las 24 horas del día. Puedes acceder a nuestros datos de contacto <a href=" ">aquí</a>.
+                </p>
+            </div>
+
+            <div class="card-value ">
+                <h4 class="card-title ">Compromiso</h4>
+                <p class="card-text ">
+                    Nuestro objetivo es ayudarlo a realizar sus cambios fácilmente. Comprometidos mejorar nuestro servicio cada día para que intercambiar y darle una segunda vida a cosas que ya no necesitas.</p>
+            </div>
+
+            <div class="card-value ">
+                <h4 class="card-title ">Gestor de incidencias</h4>
+                <p class="card-text ">
+                    Con tecnología innovadora y estricta seguridad, reducimos riesgos y brindamos un mayor nivel de protección en el intercambio, garantizando un trueque justo.
+                </p>
+            </div>
+
         </div>
-      </div>
     </section>
 
-    <section id="product" class="product-section">
-      <div class="product-container">
-        <div class="card-product flex">
-          <img
-            class="product-img"
-            src="assets/zapatos-500.jpg"
-            alt="zapatos de tacón amarillos"
-          />
-          <div class="product-description">
-            <h3 class="product-title">Zapatos de tacón</h3>
-            <p class="product-text">
-              Estos son unos zaptos amarillos que no pasan desapercibidos, como
-              nuevos.
-            </p>
-            <button class="btn"><a href="">Cambialo!</a></button>
-          </div>
+    <section id="product " class="product-section ">
+        <div class="product-container ">
+
+            <div class="card-product flex ">
+                <img class="product-img " src="assets/zapatos-500.jpg " alt="zapatos de tacón amarillos " />
+                <div class="product-description ">
+                    <h3 class="product-title ">Zapatos de tacón</h3>
+                    <p class="product-text ">
+                        Tacones amarillos como los de la Rosalía en su último videoclip. Poco uso.
+                    </p>
+                    <button class="btn "><a href=" ">Cambiar</a></button>
+                </div>
+            </div>
+
+            <div class="card-product flex ">
+                <img class="product-img " src="assets/iphone-500.jpg " alt="iPhone 11 púrpura " />
+                <div class="product-description ">
+                    <h3 class="product-title ">iPhone 11 púrpura</h3>
+                    <p class="product-text ">
+                        1 año de uso, tiene un pequeño razguño en la parte superior trasera. Me gustaría cambiarlo por una consola de nueva generación.
+                    </p>
+                    <button class="btn "><a href=" ">Cambiar</a></button>
+                </div>
+            </div>
+
+            <div class="card-product flex ">
+                <img class="product-img " src="assets/lavadora1x1.jpg " alt="lavadora " />
+                <div class="product-description ">
+                    <h3 class="product-title ">Lavadora Siemens</h3>
+                    <p class="product-text ">
+                        Lavadora color plata con garantía vigente. Capacidad de 12kg. La quiero cambiar porque me he comprado una más grande.
+                    </p>
+                    <button class="btn "><a href=" ">Cambiar</a></button>
+                </div>
+            </div>
+
+            <div class="card-product flex ">
+                <img class="product-img " src="assets/bici1x1.jpg " alt="bicicleta eléctrica amarilla " />
+                <div class="product-description ">
+                    <h3 class="product-title ">Bicicleta eléctrica plegable</h3>
+                    <p class="product-text ">
+                        Me la regalaron por Navidad y no la uso casi nunca. Batería de 24V y 7,8 Ah. Está valorada en unos 1000€, me interesa un PC Gam
+                    </p>
+                    <button class="btn "><a href=" ">Cambiar</a></button>
+                </div>
+            </div>
+
         </div>
-        <div class="card-product flex">
-          <img
-            class="product-img"
-            src="assets/iphone-500.jpg"
-            alt="iPhone 11 púrpura"
-          />
-          <div class="product-description">
-            <h3 class="product-title">iPhone 11 púrpura</h3>
-            <p class="product-text">
-              iPhone directamente traido de china, de antes de la pandemia, como
-              nuevo a estrenar. AAA.
-            </p>
-            <button class="btn"><a href="">Cambialo!</a></button>
-          </div>
-        </div>
-        <div class="card-product flex">
-          <img
-            class="product-img"
-            src="assets/lavadora1x1.jpg"
-            alt="lavadora"
-          />
-          <div class="product-description">
-            <h3 class="product-title">Lavadora LG</h3>
-            <p class="product-text">
-              Lavadora blanca casi sin uso, garantía vigente. Acepto xbox y
-              playstation.
-            </p>
-            <button class="btn"><a href="">Cambialo!</a></button>
-          </div>
-        </div>
-        <div class="card-product flex">
-          <img
-            class="product-img"
-            src="assets/bici1x1.jpg"
-            alt="bicicleta blanca"
-          />
-          <div class="product-description">
-            <h3 class="product-title">Bicicleta con cesta</h3>
-            <p class="product-text">
-              Bicicleta con cesta incluida, no tiene ruedas de apoyo, cubierta
-              recién cambiada.
-            </p>
-            <button class="btn"><a href="">Cambialo!</a></button>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="social-container">
-      <div class="rrss-container">
-        <h3 class="title-contact">¿Donde estamos?</h3>
-        <div class="icon-container">
-          <a href="#"><i class="rrss-icon fab fa-twitter-square"></i></a>
-          <a href="#"><i class="rrss-icon fab fa-facebook-square"></i></a>
-          <a href="#"><i class="rrss-icon fab fa-instagram"></i></a>
+    <section class="social-container ">
+        <div class="rrss-container ">
+            <h3 class="title-contact ">¿Dónde estamos?</h3>
+            <div class="icon-container ">
+                <a href="# "><i class="rrss-icon fab fa-facebook-square "></i></a>
+                <a href="# "><i class="rrss-icon fab fa-instagram "></i></a>
+                <a href="# "><i class="rrss-icon fab fa-twitter-square "></i></a>
+            </div>
         </div>
-      </div>
-      <hr />
-      <div class="contact-container">
-        <div class="info-contact">
-          <h3 class="title-contact">¡Contáctanos!</h3>
-          <ul class="list-contact">
-            <li><i class="contact-icon fas fa-phone"></i> 902-781-369</li>
-            <li>
-              <i class="contact-icon fas fa-envelope"></i>
-              intrepidibex@gmail.com
-            </li>
-            <li>
-              <i class="contact-icon fas fa-arrow-right"></i> Calle La X, 13.
-              Madrid, España.
-            </li>
-          </ul>
-        </div>
+        <hr />
+        <div class="contact-container">
+            <div class="info-contact">
+                <h3 class="title-contact">¡Contáctanos!</h3>
+                <ul class="list-contact">
+                    <li><i class="contact-icon fas fa-phone"></i> 902 781 369</li>
+                    <li>
+                        <i class="contact-icon fas fa-envelope"></i> intrepidibex@gmail.com
+                    </li>
+                    <li>
+                        <i class="contact-icon fas fa-arrow-right"></i> Calle La X, 13. Madrid, España.
+                    </li>
+                </ul>
+            </div>
 
-        <div class="map-container">
-          <iframe
-            class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224494.30680203543!2d-16.42607446700346!3d28.457749010572844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceccc254171%3A0x43111473d277e52e!2sSanta%20Cruz%20de%20Tenerife!5e0!3m2!1ses!2ses!4v1638901557498!5m2!1ses!2ses"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+            <div class="map-container">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224494.30680203543!2d-16.42607446700346!3d28.457749010572844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceccc254171%3A0x43111473d277e52e!2sSanta%20Cruz%20de%20Tenerife!5e0!3m2!1ses!2ses!4v1638901557498!5m2!1ses!2ses"
+                    style="border: 0" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
         </div>
-      </div>
     </section>
 
-    <footer class="footer-container">
-      <div class="link-container">
-        <div class="desktop-bg">
-          <ul class="footer-list">
-            <li class="footer-link">
-              <a href="#navbar">INICIO</a>
-            </li>
-            <li class="footer-link">
-              <a href="#product">PRODUCTOS</a>
-            </li>
-            <li class="footer-link">
-              <a href="#form">CONTACTO</a>
-            </li>
-          </ul>
+    <footer class="footer-container ">
+        <div class="link-container ">
+            <div class="desktop-bg ">
+                <ul class="footer-list ">
+                    <li class="footer-link ">
+                        <a href="">INICIO</a>
+                    </li>
+                    <li class="footer-link ">
+                        <a href="#product ">PRODUCTOS</a>
+                    </li>
+                    <li class="footer-link ">
+                        <a href="#form ">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="desktop-bg ">
+                <ul class="footer-list ">
+                    <li class="footer-link ">
+                        <a href="# ">SOPORTE</a>
+                    </li>
+                    <li class="footer-link ">
+                        <a class="conditions-link " href="./terms-conditions.html" target="_blank">AVISO LEGAL</a>
+                    </li>
+                    <li class="footer-link ">
+                        <a href="# ">CONÓCENOS</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="desktop-bg">
-          <ul class="footer-list">
-            <li class="footer-link">
-              <a href="#">SOPORTE</a>
-            </li>
-            <li class="footer-link">
-              <a href="#">AVISO LEGAL</a>
-            </li>
-            <li class="footer-link">
-              <a href="#">CONOCENOS</a>
-            </li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="footer-flex">
-        <a href="#">
-          <img class="logo" src="assets/logotipo-500.png" alt="" />
-        </a>
-        <h4 class="footer-title">Cambialo!</h4>
-        <p class="footer-rights">Copyright © 2021, Cámbialo ©</p>
-      </div>
+        <div class="footer-flex ">
+            <a href="# ">
+                <img class="logo " src="assets/logotipo-500.png " alt=" " />
+            </a>
+            <h4 class="footer-title ">Cámbialo </h4>
+            <p class="footer-rights ">Copyright © 2021, Cámbialo ©</p>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>
